@@ -1,0 +1,55 @@
+{
+  "name": "ice-portfolio",
+  "version": "1.0.0",
+  "description": "A modern full-stack developer portfolio built with Next.js, featuring an interactive 3D skin creator and comprehensive project showcase.",
+  "author": "Ice Trahan <trahantech@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://ice.codes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icetrahan/primal_heaven.git"
+  },
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "react",
+    "typescript",
+    "three.js",
+    "full-stack",
+    "web-development",
+    "3d",
+    "tailwindcss"
+  ],
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.4",
+    "@react-three/fiber": "^9.1.0",
+    "@types/three": "^0.174.0",
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "buffer": "^6.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "ignore-loader": "^0.1.2",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "util": "^0.12.5"
+  }
+}

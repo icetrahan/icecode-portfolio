@@ -1,0 +1,992 @@
+{
+    "Black": [
+        {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 2.0,
+            "description": "Bold Blue Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 5.0,
+            "description": "Normal Blue Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 10.0,
+            "description": "Thin Blue Outline, Black Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.0,
+            "z": 0.0,
+            "description": "Bold Red Outline, Black Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.0,
+            "z": 0.0,
+            "description": "Normal Red Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.0,
+            "z": 0.0,
+            "description": "Thin Red Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 2.0,
+            "z": 0.0,
+            "description": "Bold Green Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 5.0,
+            "z": 0.0,
+            "description": "Normal Green Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 10.0,
+            "z": 0.0,
+            "description": "Thin Green Outline, Black Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold White Outline, Black Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 5.0,
+            "description": "Normal White Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 10.0,
+            "description": "Thin White Outline, Black Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.0,
+            "z": 2.0,
+            "description": "Bold Pink Outline, Black Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.0,
+            "z": 5.0,
+            "description": "Normal Pink Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.0,
+            "z": 10.0,
+            "description": "Thin Pink Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 5.0,
+            "z": 5.0,
+            "description": "Normal Turquoise Outline, Black Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 10.0,
+            "z": 10.0,
+            "description": "Thin Turquoise Outline, Black Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.0,
+            "description": "Bold Yellow Outline, Black Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 0.0,
+            "description": "Normal Yellow Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.0,
+            "description": "Thin Yellow Outline, Black Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 10.0,
+            "description": "Bold White Outline, Black Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 2.0,
+            "z": 10.0,
+            "description": "Bold White Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 2.0,
+            "z": 5.0,
+            "description": "Normal White Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 2.0,
+            "description": "Thin White Outline, Black Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 10.0,
+            "description": "Bold Blue \u2192 Normal Pink \u2192 Thin White Outline, Black Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 10.0,
+            "z": 5.0,
+            "description": "Bold Red \u2192 Normal Yellow \u2192 Thin White Outline, Black Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 2.0,
+            "z": 10.0,
+            "description": "Bold Blue \u2192 Normal Pink \u2192 Thin White Outline, Black Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 10.0,
+            "z": 2.0,
+            "description": "Bold Blue \u2192 Normal Pink \u2192 Thin White Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 2.0,
+            "z": 5.0,
+            "description": "Bold Green \u2192 Normal Yellow \u2192 Thin White Outline, Black Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 2.0,
+            "description": "Bold Green \u2192 Normal Yellow \u2192 Thin White Outline, Black Interior"
+        }
+    ],
+    "Blue": [
+        {
+            "x": 0.0,
+            "y": 2.0,
+            "z": 0.8,
+            "description": "Bold Green Outline, Blue Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 5.0,
+            "z": 0.8,
+            "description": "Normal Green Outline, Blue Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 10.0,
+            "z": 0.8,
+            "description": "Thin Green Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.8,
+            "z": 0.5,
+            "description": "Bold Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.8,
+            "z": 0.5,
+            "description": "Normal Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.8,
+            "z": 0.5,
+            "description": "Thin Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.8,
+            "description": "Bold Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.5,
+            "description": "Bold Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 1.0,
+            "description": "Bold White Outline, Blue Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 2.0,
+            "description": "Normal White Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 10.0,
+            "description": "Thin White Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.2,
+            "description": "Bold Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 0.2,
+            "description": "Normal Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.2,
+            "description": "Thin Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 2.0,
+            "z": 0.8,
+            "description": "Normal Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 0.8,
+            "description": "Bold Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 0.8,
+            "description": "Thin Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 0.5,
+            "description": "Bold Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 2.0,
+            "z": 0.5,
+            "description": "Normal Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 2.0,
+            "z": 0.5,
+            "description": "Thin Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.5,
+            "description": "Bold Yellow Outline, Blue Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 2.0,
+            "z": 1.0,
+            "description": "Bold Turquoise Outline, Blue Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 5.0,
+            "z": 1.0,
+            "description": "Normal Green Outline, Blue Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 10.0,
+            "z": 1.0,
+            "description": "Thin Green Outline, Blue Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 1.0,
+            "description": "Bold White Outline, Blue Interior"
+        },
+        {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 1.0,
+            "description": "Thin White Outline, Blue Interior"
+        }
+    ],
+    "Red": [
+        {
+            "x": 0.8,
+            "y": 2.0,
+            "z": 0.0,
+            "description": "Bold Green Outline, Red Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 5.0,
+            "z": 0.0,
+            "description": "Normal Green Outline, Red Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 10.0,
+            "z": 0.0,
+            "description": "Thin Green Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 2.0,
+            "z": 0.8,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 5.0,
+            "z": 0.8,
+            "description": "Normal Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 10.0,
+            "z": 0.8,
+            "description": "Thin Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 1.0,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold White Outline, Red Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 5.0,
+            "description": "Normal White Outline, Red Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Thin White Outline, Red Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 2.0,
+            "z": 5.0,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 5.0,
+            "z": 2.0,
+            "description": "Normal Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 10.0,
+            "z": 2.0,
+            "description": "Thin Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Red Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 2.0,
+            "z": 1.0,
+            "description": "Bold Yellow Outline, Red Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 5.0,
+            "z": 1.0,
+            "description": "Normal Yellow Outline, Red Interior"
+        },
+        {
+            "x": 0.0,
+            "y": 10.0,
+            "z": 1.0,
+            "description": "Thin Green Outline, Red Interior"
+        },
+        {
+            "x": 1.0,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold White Outline, Red Interior"
+        },
+        {
+            "x": 1.0,
+            "y": 3.0,
+            "z": 3.0,
+            "description": "Thin White Outline, Red Interior"
+        }
+    ],
+    "Green": [
+        {
+            "x": 2.0,
+            "y": 0.5,
+            "z": 0.0,
+            "description": "Bold Red Outline, Green Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.5,
+            "z": 0.0,
+            "description": "Normal Red Outline, Green Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.5,
+            "z": 0.0,
+            "description": "Thin Red Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.5,
+            "z": 2.0,
+            "description": "Bold Pink Outline, Green Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.5,
+            "z": 5.0,
+            "description": "Normal Pink Outline, Green Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.5,
+            "z": 10.0,
+            "description": "Thin Pink Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.8,
+            "z": 2.0,
+            "description": "Bold Pink Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.5,
+            "z": 2.0,
+            "description": "Bold Pink Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 1.0,
+            "z": 2.0,
+            "description": "Bold White Outline, Green Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 2.0,
+            "z": 5.0,
+            "description": "Normal White Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 10.0,
+            "z": 2.0,
+            "description": "Thin White Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.2,
+            "z": 2.0,
+            "description": "Bold Pink Outline, Green Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.2,
+            "z": 5.0,
+            "description": "Normal Pink Outline, Green Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.2,
+            "z": 10.0,
+            "description": "Thin Pink Outline, Green Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.8,
+            "z": 2.0,
+            "description": "Normal Pink Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.8,
+            "z": 5.0,
+            "description": "Bold Pink Outline, Green Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.8,
+            "z": 5.0,
+            "description": "Thin Pink Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.5,
+            "z": 5.0,
+            "description": "Bold Pink Outline, Green Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.5,
+            "z": 2.0,
+            "description": "Normal Pink Outline, Green Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.5,
+            "z": 2.0,
+            "description": "Thin Pink Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.5,
+            "z": 2.0,
+            "description": "Bold Pink Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 1.0,
+            "z": 0.0,
+            "description": "Bold Yellow Outline, Green Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 1.0,
+            "z": 2.0,
+            "description": "Bold White Outline, Green Interior"
+        },
+        {
+            "x": 3.0,
+            "y": 1.0,
+            "z": 3.0,
+            "description": "Thin White Outline, Green Interior"
+        }
+    ],
+    "Cyan": [
+        {
+            "x": 2.0,
+            "y": 0.8,
+            "z": 0.8,
+            "description": "Bold Red Outline, Cyan Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.8,
+            "z": 0.8,
+            "description": "Normal Red Outline, Cyan Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.8,
+            "z": 0.8,
+            "description": "Thin Red Outline, Cyan Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.2,
+            "z": 0.2,
+            "description": "Bold Red Outline, Cyan Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.5,
+            "z": 0.5,
+            "description": "Bold Red Outline, Cyan Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.2,
+            "z": 0.2,
+            "description": "Normal Red Outline, Cyan Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.5,
+            "z": 0.2,
+            "description": "Thin Red Outline, Cyan Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.2,
+            "z": 0.2,
+            "description": "Bold Red Outline, Cyan Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.2,
+            "z": 0.2,
+            "description": "Normal Red Outline, Cyan Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.2,
+            "z": 0.2,
+            "description": "Thin Red Outline, Cyan Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 1.0,
+            "z": 1.0,
+            "description": "Bold White Outline, Cyan Interior"
+        },
+        {
+            "x": 3.0,
+            "y": 1.0,
+            "z": 1.0,
+            "description": "Thin White Outline, Cyan Interior"
+        }
+    ],
+    "Pink": [
+        {
+            "x": 0.8,
+            "y": 2.0,
+            "z": 0.8,
+            "description": "Bold Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 5.0,
+            "z": 0.8,
+            "description": "Normal Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 10.0,
+            "z": 0.8,
+            "description": "Thin Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 2.0,
+            "z": 0.2,
+            "description": "Bold Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 2.0,
+            "z": 0.5,
+            "description": "Bold Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 5.0,
+            "z": 0.2,
+            "description": "Normal Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 10.0,
+            "z": 0.5,
+            "description": "Thin Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.3,
+            "y": 2.0,
+            "z": 2.0,
+            "description": "Bold Turquoise Outline, Pink Interior"
+        },
+        {
+            "x": 0.3,
+            "y": 5.0,
+            "z": 5.0,
+            "description": "Normal Turquoise Outline, Pink Interior"
+        },
+        {
+            "x": 0.3,
+            "y": 10.0,
+            "z": 10.0,
+            "description": "Thin Turquoise Outline, Pink Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 2.0,
+            "z": 0.2,
+            "description": "Bold Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 5.0,
+            "z": 0.2,
+            "description": "Normal Green Outline, Pink Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 10.0,
+            "z": 0.2,
+            "description": "Thin Green Outline, Pink Interior"
+        },
+        {
+            "x": 1.0,
+            "y": 2.0,
+            "z": 1.0,
+            "description": "Bold White Outline, Pink Interior"
+        },
+        {
+            "x": 1.0,
+            "y": 3.0,
+            "z": 1.0,
+            "description": "Thin White Outline, Pink Interior"
+        },
+        {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 3.0,
+            "description": "Thin White Outline, Pink Interior"
+        }
+    ],
+    "Yellow": [
+        {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 2.0,
+            "description": "Bold Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 5.0,
+            "description": "Normal Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 10.0,
+            "description": "Thin Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 2.0,
+            "description": "Bold Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 2.0,
+            "description": "Bold Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 5.0,
+            "description": "Normal Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.5,
+            "y": 0.2,
+            "z": 10.0,
+            "description": "Thin Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 2.0,
+            "description": "Bold Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 5.0,
+            "description": "Normal Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 10.0,
+            "description": "Thin Blue Outline, Yellow Interior"
+        },
+        {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 2.0,
+            "description": "Bold White Outline, Yellow Interior"
+        }
+    ],
+    "Aqua": [
+        {
+            "x": 2.0,
+            "y": 0.8,
+            "z": 0.2,
+            "description": "Bold Red Outline, Aqua Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.8,
+            "z": 0.2,
+            "description": "Normal Red Outline, Aqua Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.8,
+            "z": 0.2,
+            "description": "Thin Red Outline, Aqua Interior"
+        }
+    ],
+    "Light Blue": [
+        {
+            "x": 2.0,
+            "y": 0.2,
+            "z": 0.8,
+            "description": "Bold Red Outline, Light Blue Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.2,
+            "z": 0.8,
+            "description": "Normal Red Outline, Light Blue Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.2,
+            "z": 0.8,
+            "description": "Thin Red Outline, Light Blue Interior"
+        }
+    ],
+    "Orange": [
+        {
+            "x": 0.8,
+            "y": 0.2,
+            "z": 2.0,
+            "description": "Bold Blue Outline, Orange Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 0.2,
+            "z": 5.0,
+            "description": "Normal Blue Outline, Orange Interior"
+        },
+        {
+            "x": 0.8,
+            "y": 0.2,
+            "z": 10.0,
+            "description": "Thin Blue Outline, Orange Interior"
+        }
+    ],
+    "Lime": [
+        {
+            "x": 0.2,
+            "y": 0.8,
+            "z": 2.0,
+            "description": "Bold Blue Outline, Lime Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 0.8,
+            "z": 5.0,
+            "description": "Normal Blue Outline, Lime Interior"
+        },
+        {
+            "x": 0.2,
+            "y": 0.8,
+            "z": 10.0,
+            "description": "Thin Blue Outline, Lime Interior"
+        },
+        {
+            "x": 2.0,
+            "y": 0.3,
+            "z": 2.0,
+            "description": "Bold Pink Outline, Lime Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 0.3,
+            "z": 5.0,
+            "description": "Normal Pink Outline, Lime Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 0.3,
+            "z": 10.0,
+            "description": "Thin Pink Outline, Lime Interior"
+        }
+    ],
+    "Sky Blue": [
+        {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.3,
+            "description": "Bold Yellow Outline, Sky Blue Interior"
+        },
+        {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 0.3,
+            "description": "Normal Yellow Outline, Sky Blue Interior"
+        },
+        {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.3,
+            "description": "Thin Yellow Outline, Sky Blue Interior"
+        }
+    ]
+}
