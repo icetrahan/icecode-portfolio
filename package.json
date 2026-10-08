@@ -4,10 +4,10 @@
   "description": "A modern full-stack developer portfolio built with Next.js, featuring an interactive 3D skin creator and comprehensive project showcase.",
   "author": "Ice Trahan <trahantech@gmail.com>",
   "license": "MIT",
-  "homepage": "https://ice.codes",
+  "homepage": "https://icecode.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/icetrahan/primal_heaven.git"
+    "url": "https://github.com/icetrahan/icecode-portfolio.git"
   },
   "keywords": [
     "portfolio",

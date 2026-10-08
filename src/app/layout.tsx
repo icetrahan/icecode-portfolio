@@ -31,14 +31,14 @@ export const metadata = {
   ],
   authors: [{ name: "Ice Trahan", url: "https://github.com/icetrahan" }],
   creator: "Ice Trahan",
-  metadataBase: new URL("https://ice.codes"),
+  metadataBase: new URL("https://icecode.dev"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ice.codes",
+    url: "https://icecode.dev",
     title: "Ice.code | Full Stack Developer & Systems Architect",
     description: "Professional portfolio showcasing full stack development expertise, 3D web applications, and innovative solutions.",
     siteName: "Ice.code Portfolio",

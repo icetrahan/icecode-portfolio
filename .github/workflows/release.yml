@@ -1,0 +1,75 @@
+# Builds the site on every push to main and publishes it as a GitHub Release.
+# The icecode.dev host never builds anything: deploy/launcher.js polls the latest
+# release, checks its sha256, starts it beside the running copy and swaps over
+# once it answers. A build that fails here never reaches the site.
+name: Release site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-site
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: |
+          npm ci
+          # The lockfile was written on Windows and lacks the Linux builds of these
+          # native packages (npm/cli#4828); add the ones matching the locked versions.
+          npm install --no-save $(node -e "
+            const p = require('./package-lock.json').packages;
+            console.log('lightningcss-linux-x64-gnu@' + p['node_modules/lightningcss'].version,
+                        '@tailwindcss/oxide-linux-x64-gnu@' + p['node_modules/@tailwindcss/oxide'].version)")
+
+      - name: Build
+        run: npm run build
+
+      - name: Package
+        id: pkg
+        run: |
+          set -euo pipefail
+          rm -rf bundle && mkdir bundle
+          cp -a .next/standalone/. bundle/
+          mkdir -p bundle/.next && cp -a .next/static bundle/.next/static
+          cp -a public bundle/public
+          test -f bundle/server.js
+          tar -czf site.tar.gz -C bundle .
+          tag="site-${GITHUB_RUN_NUMBER}-${GITHUB_SHA::7}"
+          jq -n \
+            --arg tag "$tag" --arg sha "$GITHUB_SHA" --arg sha256 "$(sha256sum site.tar.gz | cut -d' ' -f1)" \
+            --argjson size "$(stat -c%s site.tar.gz)" --arg builtAt "$(date -u +%FT%TZ)" \
+            '{tag: $tag, sha: $sha, asset: "site.tar.gz", sha256: $sha256, size: $size, builtAt: $builtAt}' > manifest.json
+          cat manifest.json
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.pkg.outputs.tag }}
+        run: |
+          set -euo pipefail
+          gh release create "$TAG" site.tar.gz manifest.json \
+            --target "$GITHUB_SHA" --title "$TAG" --latest \
+            --notes "$(git log -1 --format='%s')
+
+          Deployed to icecode.dev automatically: the host picks up the latest release within ~2 minutes."
+          # Keep the five newest site releases; older ones are only clutter.
+          gh release list --limit 100 --json tagName,createdAt \
+            --jq '[.[] | select(.tagName | startswith("site-"))] | sort_by(.createdAt) | reverse | .[5:] | .[].tagName' |
+            while read -r old; do gh release delete "$old" --cleanup-tag --yes; done

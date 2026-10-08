@@ -134,7 +134,7 @@ This portfolio demonstrates:
 ## 📞 Contact
 
 - **Email**: trahantech@gmail.com
-- **Discord**: ice.codes
+- **Discord**: Ice.code
 - **GitHub**: [icetrahan](https://github.com/icetrahan)
 
 ## 📝 License

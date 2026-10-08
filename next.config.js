@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Self-contained server bundle (.next/standalone) — CI ships it as a GitHub
+  // release and the host's launcher pulls it (see deploy/README.md).
+  output: 'standalone',
   images: {
     remotePatterns: [
       {
