@@ -143,16 +143,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🚀 Deployment
 
-This site is optimized for deployment on:
-- Vercel (recommended for Next.js)
-- Netlify
-- Any static hosting service
-
-### Deploy to Vercel
-```bash
-npm run build
-npx vercel --prod
-```
+Live at **[icecode.dev](https://icecode.dev)**. Pushing to `main` is the deploy:
+GitHub Actions builds a standalone Next.js bundle and publishes it as a release,
+and the host pulls the newest release and swaps to it with no downtime. A build
+that fails never reaches the site. Details, console commands and rollback:
+[`deploy/README.md`](deploy/README.md).
 
 ---
 
