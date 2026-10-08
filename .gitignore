@@ -60,3 +60,6 @@ next-env.d.ts
 /public/PortMusic/
 /public/cacheFile.json
 /TheIsle*.log
+
+# local build leftovers
+/.next-stale/

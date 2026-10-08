@@ -11,10 +11,10 @@ export default function Header() {
   // Navigation links
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Projects", path: "/projects" },
-    { name: "Skills", path: "/skills" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Projects", path: "/#work" },
+    { name: "Skills", path: "/#skills" },
+    { name: "About", path: "/#about" },
+    { name: "Contact", path: "/#contact" },
   ];
 
   // Handle scroll effect for header
@@ -50,6 +50,7 @@ export default function Header() {
               <Link 
                 key={link.path} 
                 href={link.path}
+                aria-current={pathname === link.path ? "page" : undefined}
                 className={`transition-colors hover:text-ice-blue ${
                   pathname === link.path ? "text-ice-blue" : "text-gray-300"
                 }`}
@@ -59,9 +60,15 @@ export default function Header() {
             ))}
           </nav>
 
+          <Link href="/#contact" className="hidden lg:inline-flex items-center gap-3 rounded-lg border border-cyan-300/40 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-cyan-300/10">
+            Let&apos;s build something <span className="text-ice-blue">↗</span>
+          </Link>
+
           {/* Mobile Menu Button */}
           <button 
             className="md:hidden text-gray-300 hover:text-ice-blue"
+            aria-label="Toggle navigation"
+            aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -29,7 +29,7 @@ export default function Footer() {
                 {["Home", "Projects", "Skills", "About", "Contact"].map((page) => (
                   <li key={page}>
                     <Link 
-                      href={page === "Home" ? "/" : `/${page.toLowerCase()}`} 
+                      href={page === "Home" ? "/" : `/#${page === "Projects" ? "work" : page.toLowerCase()}`} 
                       className="text-gray-400 hover:text-ice-blue transition-colors"
                     >
                       {page}
