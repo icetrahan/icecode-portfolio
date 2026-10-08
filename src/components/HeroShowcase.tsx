@@ -10,7 +10,6 @@ const windows = [
 
 export default function HeroShowcase() {
   return (
-    <>
     <div className="showcase" aria-label="Things I've built">
       {windows.map((w, i) => {
         const inner = (
@@ -29,11 +28,15 @@ export default function HeroShowcase() {
         );
       })}
     </div>
+  );
+}
+
+export function HeroStats() {
+  return (
     <div className="showcase-stats" aria-label="Primal Hosted today">
       <div><b>35</b><span>communities</span></div>
       <div><b>42</b><span>servers served</span></div>
       <div><b>63K</b><span>players managed</span></div>
     </div>
-    </>
   );
 }

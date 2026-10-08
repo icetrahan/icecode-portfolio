@@ -203,29 +203,36 @@ header nav a[href='/'] { font-size:16px; letter-spacing:0; }
 button.button { cursor:pointer; font:inherit; font-weight:700; background-color:transparent; }
 button.button-primary { background:var(--cyan); }
 
-/* Hero: three real product windows */
-.showcase { position:absolute; right:0; top:4%; width:47%; height:92%; pointer-events:none; z-index:2; }
-.hero-art:after { display:none; }
-.win { position:absolute; display:block; border:1px solid #2c4a63; border-radius:10px; overflow:hidden; background:#0b1624; box-shadow:0 30px 60px -20px rgba(0,0,0,.75), 0 0 0 1px rgba(67,216,246,.06); pointer-events:auto; text-decoration:none; transition:transform .35s ease, border-color .25s, box-shadow .35s; }
-.win:hover { border-color:var(--cyan); box-shadow:0 34px 70px -18px rgba(0,0,0,.8), 0 0 30px rgba(67,216,246,.18); z-index:5; }
-.win-bar { display:flex; align-items:center; gap:6px; height:24px; padding:0 10px; background:#0f1d2e; border-bottom:1px solid #1f3446; }
-.win-bar i { width:8px; height:8px; border-radius:50%; background:#2a4257; }
+/* Hero: three real product windows floating in the gap between the copy and the portrait */
+.showcase { position:absolute; left:41.4%; top:33%; width:12.8%; height:64%; z-index:3; pointer-events:none; }
+.win { position:absolute; display:block; border:1px solid #2c4a63; border-radius:10px; overflow:hidden; background:#0b1624; box-shadow:0 24px 50px -18px rgba(0,0,0,.8), 0 0 0 1px rgba(67,216,246,.06); pointer-events:auto; text-decoration:none; transition:transform .35s ease, border-color .25s, box-shadow .35s; }
+.win:hover { border-color:var(--cyan); box-shadow:0 30px 60px -16px rgba(0,0,0,.85), 0 0 30px rgba(67,216,246,.2); z-index:5; }
+.win-bar { display:flex; align-items:center; gap:5px; height:20px; padding:0 8px; background:#0f1d2e; border-bottom:1px solid #1f3446; }
+.win-bar i { width:6px; height:6px; border-radius:50%; background:#2a4257; flex:none; }
 .win-bar i:first-child { background:#ff6b6b99; } .win-bar i:nth-child(2) { background:#ffc85799; } .win-bar i:nth-child(3) { background:#4ade8099; }
-.win-bar em { font-style:normal; font-size:10px; color:#7f97b0; margin-left:8px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.win-bar em { font-style:normal; font-size:9px; color:#7f97b0; margin-left:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .win-shot { position:relative; display:block; aspect-ratio:16/10; }
 .win-shot img { object-fit:cover; object-position:top center; }
-.win-label { position:absolute; left:10px; bottom:10px; display:flex; align-items:center; gap:7px; padding:5px 10px; border-radius:20px; background:#07111dd9; border:1px solid #2c4a63; color:#e6f1fb; font-size:11px; font-weight:600; backdrop-filter:blur(6px); }
-.win-label b { width:7px; height:7px; border-radius:50%; background:#4ade80; box-shadow:0 0 10px #4ade80; }
-.win-back { width:60%; top:0; right:0; transform:rotate(3deg); opacity:.92; animation:win-float 7s ease-in-out infinite; }
-.win-mid { width:58%; top:22%; left:0; transform:rotate(-4deg); z-index:2; animation:win-float 8s ease-in-out -2s infinite; }
-.win-front { width:70%; bottom:13%; right:5%; z-index:3; animation:win-float 9s ease-in-out -4s infinite; }
-.win-back:hover { transform:rotate(3deg) translateY(-6px); } .win-mid:hover { transform:rotate(-4deg) translateY(-6px); } .win-front:hover { transform:translateY(-6px); }
+.win-label { position:absolute; left:8px; bottom:8px; display:flex; align-items:center; gap:6px; padding:4px 9px; border-radius:20px; background:#07111dd9; border:1px solid #2c4a63; color:#e6f1fb; font-size:10px; font-weight:600; backdrop-filter:blur(6px); white-space:nowrap; }
+.win-label b { width:6px; height:6px; border-radius:50%; background:#4ade80; box-shadow:0 0 10px #4ade80; }
+.win-back { width:100%; top:0; left:4%; transform:rotate(4deg); animation:win-float 7s ease-in-out infinite; }
+.win-mid { width:100%; top:30%; left:-3%; transform:rotate(-4deg); z-index:2; animation:win-float 8s ease-in-out -2s infinite; }
+.win-front { width:100%; top:60%; left:3%; z-index:3; animation:win-float 9s ease-in-out -4s infinite; }
+.win-back:hover { transform:rotate(4deg) translateY(-6px); } .win-mid:hover { transform:rotate(-4deg) translateY(-6px); } .win-front:hover { transform:translateY(-6px); }
 @keyframes win-float { 0%,100% { translate:0 0; } 50% { translate:0 -8px; } }
-.showcase-stats { position:absolute; left:54%; bottom:4%; z-index:4; display:flex; gap:8px; pointer-events:auto; }
-.showcase-stats div { padding:8px 14px; border:1px solid #2c4a63; border-radius:9px; background:#0a1624e6; backdrop-filter:blur(6px); }
+.showcase-stats { display:flex; gap:8px; margin-top:20px; }
+.showcase-stats div { padding:8px 14px; border:1px solid #2c4a63; border-radius:9px; background:#0a1624e6; }
 .showcase-stats b { display:block; color:var(--cyan); font-size:20px; line-height:1.1; letter-spacing:-.02em; }
 .showcase-stats span { color:#93a8bf; font-size:9px; letter-spacing:.14em; text-transform:uppercase; }
 @media (prefers-reduced-motion:reduce) { .win { animation:none; } }
+/* Narrower laptops: nudge the windows clear of the hero buttons */
+@media (max-width:1240px) { .showcase { left:43.2%; width:12.4%; } }
+/* 901-1100px: no gap beside the portrait, so the windows fan out in a row under the stats */
+@media (min-width:901px) and (max-width:1100px) {
+  .showcase { position:relative; left:auto; top:auto; width:50%; height:150px; margin:22px 0 0; z-index:5; }
+  .win-back, .win-mid, .win-front { width:32%; top:6px; }
+  .win-back { left:0; } .win-mid { left:33%; top:16px; } .win-front { left:66%; }
+}
 
 /* Project cards: the whole card is the link */
 .project-grid { grid-template-columns:repeat(3,1fr); gap:18px; }
@@ -284,9 +291,8 @@ button.button-primary { background:var(--cyan); }
 @media (max-width:560px) { .contact-row { grid-template-columns:1fr; } }
 
 @media (max-width:900px) {
-  .hero-art { position:relative; height:auto; }
-  .showcase { position:relative; width:100%; height:auto; aspect-ratio:1.2; top:0; margin-top:14px; }
-  .showcase-stats { position:relative; left:auto; bottom:auto; margin:14px 0 6px; justify-content:space-between; }
+  .showcase { position:relative; left:auto; top:auto; width:100%; max-width:520px; height:auto; aspect-ratio:1.05; margin:18px auto 0; }
+  .win-back { width:66%; left:34%; top:0; } .win-mid { width:62%; left:0; top:20%; } .win-front { width:72%; left:22%; top:46%; }
   .showcase-stats div { flex:1; padding:8px 10px; }
   .showcase-stats b { font-size:18px; }
 }

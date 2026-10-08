@@ -1,6 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CategoryIcon, ActivityStrip } from "@/components/PortfolioDetails";
-import HeroShowcase from "@/components/HeroShowcase";
+import HeroLandscape from "@/components/HeroLandscape";
+import HeroPortrait from "@/components/HeroPortrait";
+import HeroShowcase, { HeroStats } from "@/components/HeroShowcase";
 import ProjectCard from "@/components/ProjectCard";
 import { ContactButton } from "@/components/ContactModal";
 import { featuredProjects } from "@/data/projects";
@@ -26,8 +29,10 @@ export default async function Home() {
           <Link href="/about">About me →</Link>
         </div>
         <div id="skills" className="discipline-row"><span><CategoryIcon kind={0} />Games</span><span><CategoryIcon kind={1} />Communities</span><span><CategoryIcon kind={2} />Products</span><span><CategoryIcon kind={3} />Infrastructure</span></div>
+        <HeroStats />
       </div>
-      <div className="hero-art"><HeroShowcase /></div>
+      <div className="hero-art"><HeroLandscape /><Image src="/planet.png" alt="" width={112} height={112} className="layer-planet" priority /><HeroPortrait /><Image src="/crystal.png" alt="" width={86} height={150} className="layer-crystal" priority /><div className="art-label art-label-right">GAMES<br />COMMUNITIES<br />PRODUCTS<br />INFRASTRUCTURE</div><div className="art-label art-label-bottom">SELF-TAUGHT / ALWAYS BUILDING</div><div className="hero-signature">ice<span>.code</span><small>real projects. real impact.</small></div></div>
+      <HeroShowcase />
     </section>
     <section id="work" className="work-section">
       <div className="section-heading"><div><h2>Featured Projects</h2></div><Link className="section-note" href="/projects">ALL PROJECTS →</Link></div>
