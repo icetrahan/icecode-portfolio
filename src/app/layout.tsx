@@ -3,6 +3,7 @@ import { Inter, Dancing_Script } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackgroundFX from "@/components/BackgroundFX";
+import ContactModal from "@/components/ContactModal";
 
 const inter = Inter({ subsets: ["latin"] });
 const dancing = Dancing_Script({
@@ -16,7 +17,7 @@ export const metadata = {
     default: "Ice.code | Full Stack Developer & Systems Architect",
     template: "%s | Ice.code"
   },
-  description: "Professional portfolio of Ice Trahan - Full stack developer, systems architect, and gaming community builder. Specializing in Python, JavaScript, React, and modern web technologies.",
+  description: "Caleb \"Ice\" Trahan, founder and engineer. I build and run Primal Hosted (game-server hosting for 35 communities), Taskiry, Isla Prima and the systems behind them.",
   keywords: [
     "full stack developer",
     "systems architect", 
@@ -73,6 +74,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <ContactModal />
       </body>
     </html>
   );

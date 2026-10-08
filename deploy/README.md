@@ -37,6 +37,7 @@ becomes a release.
 
 ```
 launcher.js            this folder's launcher.js (copied by hand; it is not self-updating)
+site.env               runtime secrets for the site, KEY=VALUE (see site.env.example) — never in git
 deploy-state.json      active / previous release, paused flag
 releases/<tag>/        unpacked releases (newest 3 + active + previous kept)
 public/SkinViewer/     heavy 3D assets for /projects/skinCreator  ┐ gitignored, so not in
@@ -51,3 +52,12 @@ in the panel; the egg's own startup would `npm install` on every boot).
 
 `launcher.js` is the one file that doesn't auto-deploy. After editing it here, upload
 it over `/home/container/launcher.js` and restart the server from the panel.
+
+## Runtime secrets (`site.env`)
+
+The contact form (`/api/contact`) sends mail through Resend and needs `RESEND_API_KEY`.
+Secrets never go in the repo or a release: they live in `/home/container/site.env`
+(format and names in [`site.env.example`](site.env.example)) and the launcher passes them
+to the site each time it starts a release. After editing `site.env`, restart the server
+(or wait for the next release). Without the key the form answers **503 "not configured"**
+and tells the visitor to email directly — it never pretends a message was sent.

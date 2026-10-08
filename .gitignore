@@ -63,3 +63,6 @@ next-env.d.ts
 
 # local build leftovers
 /.next-stale/
+
+# host runtime secrets (deploy/README.md)
+site.env

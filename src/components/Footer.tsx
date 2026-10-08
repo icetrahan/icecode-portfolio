@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 import DiscordCopy from "@/components/DiscordCopy";
+import { CONTACT_EMAIL, socials } from "@/data/socials";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,7 +30,7 @@ export default function Footer() {
                 {["Home", "Projects", "Skills", "About", "Contact"].map((page) => (
                   <li key={page}>
                     <Link 
-                      href={page === "Home" ? "/" : `/#${page === "Projects" ? "work" : page.toLowerCase()}`} 
+                      href={page === "Home" ? "/" : `/${page.toLowerCase()}`} 
                       className="text-gray-400 hover:text-ice-blue transition-colors"
                     >
                       {page}
@@ -44,7 +45,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://github.com/icetrahan"
+                    href={socials.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-ice-blue transition-colors"
@@ -53,11 +54,21 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
+                  <a
+                    href={socials.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-ice-blue transition-colors"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
                   <DiscordCopy variant="link" />
                 </li>
                 <li>
                   <a
-                    href="mailto:trahantech@gmail.com"
+                    href={`mailto:${CONTACT_EMAIL}`}
                     className="text-gray-400 hover:text-ice-blue transition-colors"
                   >
                     Email

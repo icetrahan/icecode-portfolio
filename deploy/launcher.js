@@ -165,11 +165,34 @@ function prune() {
 
 const byPort = new Map();    // port -> child
 
+// Runtime secrets for the site (e.g. RESEND_API_KEY for the contact form) live in
+// <root>/site.env as KEY=VALUE lines, never in the repo or a release. Re-read on every
+// server start, so an edit takes effect on the next release or restart.
+function readSiteEnv() {
+  const file = path.join(ROOT, 'site.env');
+  const env = {};
+  let text;
+  try { text = fs.readFileSync(file, 'utf8'); } catch { return env; }
+  for (const raw of text.replace(/^﻿/, '').split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) continue;
+    const eq = line.indexOf('=');
+    if (eq < 1) continue;
+    let val = line.slice(eq + 1).trim();
+    if (/^(['"]).*\1$/.test(val)) val = val.slice(1, -1);
+    env[line.slice(0, eq).trim()] = val;
+  }
+  return env;
+}
+
 function startServer(tag, dir, port) {
+  const siteEnv = readSiteEnv();
+  const keys = Object.keys(siteEnv);
+  log(`site.env: ${keys.length ? keys.join(', ') : 'none (contact form will report itself unconfigured)'}`);
   const child = spawn(process.execPath, ['server.js'], {
     cwd: dir,
     // HOSTNAME must be overridden: Docker sets it to the container id and Next binds to it.
-    env: { ...process.env, NODE_ENV: 'production', PORT: String(port), HOSTNAME: '127.0.0.1' },
+    env: { ...process.env, ...siteEnv, NODE_ENV: 'production', PORT: String(port), HOSTNAME: '127.0.0.1' },
     stdio: ['ignore', 'pipe', 'pipe'],
   });
   const tagShort = tag.replace(/^site-/, '');
