@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // Real products, real screenshots — each window opens the thing it shows.
 const windows = [
-  { cls: "win-back", url: "taskiry.com", href: "https://taskiry.com", img: "/projects/shots/taskiry.webp", label: "Taskiry · public beta" },
+  { cls: "win-back", url: "taskiry.com", href: "https://taskiry.com", img: "/projects/shots/taskiry-v3.webp", label: "Taskiry · public beta" },
   { cls: "win-mid", url: "icecode.dev/projects/skinCreator", href: "/projects/skinCreator", img: "/projects/shots/skincreator.webp", label: "3D skin creator · try it" },
   { cls: "win-front", url: "primalhosted.com", href: "https://primalhosted.com", img: "/projects/shots/primalhosted.webp", label: "Primal Hosted · live" },
 ];
