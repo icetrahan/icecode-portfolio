@@ -54,7 +54,7 @@ export const projects: Project[] = [
     eyebrow: "Product · public beta",
     description:
       "Tasks, sprints, infinite whiteboards and real-time docs in one app, with a built-in MCP server so AI agents can plan alongside your team.",
-    image: "/projects/shots/taskiry-v2.webp",
+    image: "/projects/shots/taskiry-v3.webp",
     href: "https://taskiry.com",
     linkLabel: "taskiry.com",
     category: "Products",
