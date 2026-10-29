@@ -90,7 +90,7 @@ export const projects: Project[] = [
     eyebrow: "Community site · horse racing",
     description:
       "The home of a horse-racing community: years of the server's spreadsheets turned into one archive of 2,513 horses, 2,662 races, bloodlines and stables, with Discord sign-in, rankings, adoption and stable silks.",
-    image: "/projects/shots/rott.webp",
+    image: "/projects/shots/rott-v2.webp",
     href: "https://rulersofthetrack.com",
     linkLabel: "rulersofthetrack.com",
     category: "Web",
