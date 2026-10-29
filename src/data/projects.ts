@@ -65,8 +65,8 @@ export const projects: Project[] = [
     name: "CleatSheetz",
     eyebrow: "Data product · rebuilt",
     description:
-      "Free fantasy-football tools for Sleeper and ESPN leagues: your matchup and the lineup moves that change it, playoff odds from 3,000 simulated seasons, a trade finder, and every projection graded in public.",
-    image: "/projects/shots/cleatsheetz-v2.webp",
+      "Free fantasy-football tools for Sleeper and ESPN leagues: your matchup and the lineup moves that change it, playoff odds from 3,000 simulated seasons, a trade finder and trade grades. Projections are graded in public, and this season they beat the best public benchmark.",
+    image: "/projects/shots/cleatsheetz-v3.webp",
     href: "https://cleatsheetz.com",
     linkLabel: "cleatsheetz.com",
     category: "Products",
